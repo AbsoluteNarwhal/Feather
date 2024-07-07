@@ -9,3 +9,5 @@
 #else
 	#error Unsupported Platform!
 #endif
+
+#define BIT(x) (1 << x)

@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="Events">
+      <UniqueIdentifier>{3A8963B1-262B-8E87-0FE6-A1DBFB2615D8}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Feather">
       <UniqueIdentifier>{64EEE102-D0CD-609E-D9E5-EB744544C7FF}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Events\ApplicationEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Events\Event.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Events\KeyEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Events\MouseEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Feather\Application.h">
       <Filter>Feather</Filter>
     </ClInclude>
@@ -19,6 +34,7 @@
       <Filter>Feather</Filter>
     </ClInclude>
     <ClInclude Include="src\FeatherEngine.h" />
+    <ClInclude Include="src\ftpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Feather\Application.cpp">
@@ -27,5 +43,6 @@
     <ClCompile Include="src\Feather\Log.cpp">
       <Filter>Feather</Filter>
     </ClCompile>
+    <ClCompile Include="src\ftpch.cpp" />
   </ItemGroup>
 </Project>

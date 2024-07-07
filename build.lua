@@ -13,6 +13,9 @@ project "FeatherEngine"
 	targetdir ("bin/" .. outputdir)
 	objdir ("bin/int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "ftpch.h"
+	pchsource "FeatherEngine/src/ftpch.cpp"
+
 	files 
 	{
 		"%{prj.name}/src/**.h",
@@ -21,6 +24,7 @@ project "FeatherEngine"
 
 	includedirs 
 	{
+		"FeatherEngine/src",
 		"FeatherEngine/vendor/spdlog/include"
 	}
 
@@ -49,7 +53,7 @@ project "FeatherEngine"
 		symbols "Off"
 
 project "ExampleApp"
-	location "ExampleApp"
+	location "%{prj.name}"
 	kind "ConsoleApp"
 	language "C++"
 
