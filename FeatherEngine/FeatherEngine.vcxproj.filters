@@ -7,6 +7,9 @@
     <Filter Include="Feather">
       <UniqueIdentifier>{64EEE102-D0CD-609E-D9E5-EB744544C7FF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Layer">
+      <UniqueIdentifier>{6287950D-CE9B-BDBE-971D-611E03F1B9EF}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Window">
       <UniqueIdentifier>{3DEA79DA-298C-A4B0-1247-B804FE872B01}</UniqueIdentifier>
     </Filter>
@@ -37,6 +40,12 @@
       <Filter>Feather</Filter>
     </ClInclude>
     <ClInclude Include="src\FeatherEngine.h" />
+    <ClInclude Include="src\Layer\Layer.h">
+      <Filter>Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Layer\LayerStack.h">
+      <Filter>Layer</Filter>
+    </ClInclude>
     <ClInclude Include="src\Window\Window.h">
       <Filter>Window</Filter>
     </ClInclude>
@@ -51,6 +60,12 @@
     </ClCompile>
     <ClCompile Include="src\Feather\Log.cpp">
       <Filter>Feather</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Layer\Layer.cpp">
+      <Filter>Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Layer\LayerStack.cpp">
+      <Filter>Layer</Filter>
     </ClCompile>
     <ClCompile Include="src\Window\WindowsWindow.cpp">
       <Filter>Window</Filter>

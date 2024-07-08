@@ -1,6 +1,24 @@
 ﻿  Application.cpp
-C:\dev\Feather\FeatherEngine\src\Feather\Application.h(20,27): warning C4251: 'Feather::Application::m_Window': 'std::unique_ptr<Feather::Window,std::default_delete<Feather::Window>>' needs to have dll-interface to be used by clients of 'Feather::Application'
+C:\dev\Feather\FeatherEngine\src\Layer\Layer.h(21,15): warning C4251: 'Feather::Layer::m_DebugName': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Feather::Layer'
+C:\dev\Feather\FeatherEngine\src\Layer\LayerStack.h(23,23): warning C4251: 'Feather::LayerStack::m_Layers': 'std::vector<Feather::Layer *,std::allocator<Feather::Layer *>>' needs to have dll-interface to be used by clients of 'Feather::LayerStack'
+C:\dev\Feather\FeatherEngine\src\Layer\LayerStack.h(24,33): warning C4251: 'Feather::LayerStack::m_LayerInsert': 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>' needs to have dll-interface to be used by clients of 'Feather::LayerStack'
+C:\dev\Feather\FeatherEngine\src\Layer\LayerStack.h(24,33): warning C4251:         with
+C:\dev\Feather\FeatherEngine\src\Layer\LayerStack.h(24,33): warning C4251:         [
+C:\dev\Feather\FeatherEngine\src\Layer\LayerStack.h(24,33): warning C4251:             _Ty=Feather::Layer *
+C:\dev\Feather\FeatherEngine\src\Layer\LayerStack.h(24,33): warning C4251:         ]
+C:\dev\Feather\FeatherEngine\src\Feather\Application.h(24,27): warning C4251: 'Feather::Application::m_Window': 'std::unique_ptr<Feather::Window,std::default_delete<Feather::Window>>' needs to have dll-interface to be used by clients of 'Feather::Application'
 C:\dev\Feather\FeatherEngine\src\Feather\Log.h(18,42): warning C4251: 'Feather::Log::s_CoreLogger': 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of 'Feather::Log'
 C:\dev\Feather\FeatherEngine\src\Feather\Log.h(19,42): warning C4251: 'Feather::Log::s_ClientLogger': 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of 'Feather::Log'
+  Layer.cpp
+C:\dev\Feather\FeatherEngine\src\Layer\Layer.h(21,15): warning C4251: 'Feather::Layer::m_DebugName': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Feather::Layer'
+  LayerStack.cpp
+C:\dev\Feather\FeatherEngine\src\Layer\Layer.h(21,15): warning C4251: 'Feather::Layer::m_DebugName': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Feather::Layer'
+C:\dev\Feather\FeatherEngine\src\Layer\LayerStack.h(23,23): warning C4251: 'Feather::LayerStack::m_Layers': 'std::vector<Feather::Layer *,std::allocator<Feather::Layer *>>' needs to have dll-interface to be used by clients of 'Feather::LayerStack'
+C:\dev\Feather\FeatherEngine\src\Layer\LayerStack.h(24,33): warning C4251: 'Feather::LayerStack::m_LayerInsert': 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>' needs to have dll-interface to be used by clients of 'Feather::LayerStack'
+C:\dev\Feather\FeatherEngine\src\Layer\LayerStack.h(24,33): warning C4251:         with
+C:\dev\Feather\FeatherEngine\src\Layer\LayerStack.h(24,33): warning C4251:         [
+C:\dev\Feather\FeatherEngine\src\Layer\LayerStack.h(24,33): warning C4251:             _Ty=Feather::Layer *
+C:\dev\Feather\FeatherEngine\src\Layer\LayerStack.h(24,33): warning C4251:         ]
+  Generating Code...
      Creating library ..\bin\Debug-windows-x86_64\FeatherEngine.lib and object ..\bin\Debug-windows-x86_64\FeatherEngine.exp
   FeatherEngine.vcxproj -> C:\dev\Feather\bin\Debug-windows-x86_64\FeatherEngine.dll

@@ -156,6 +156,8 @@
     <ClInclude Include="src\Feather\EntryPoint.h" />
     <ClInclude Include="src\Feather\Log.h" />
     <ClInclude Include="src\FeatherEngine.h" />
+    <ClInclude Include="src\Layer\Layer.h" />
+    <ClInclude Include="src\Layer\LayerStack.h" />
     <ClInclude Include="src\Window\Window.h" />
     <ClInclude Include="src\Window\WindowsWindow.h" />
     <ClInclude Include="src\ftpch.h" />
@@ -163,6 +165,8 @@
   <ItemGroup>
     <ClCompile Include="src\Feather\Application.cpp" />
     <ClCompile Include="src\Feather\Log.cpp" />
+    <ClCompile Include="src\Layer\Layer.cpp" />
+    <ClCompile Include="src\Layer\LayerStack.cpp" />
     <ClCompile Include="src\Window\WindowsWindow.cpp" />
     <ClCompile Include="src\ftpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>

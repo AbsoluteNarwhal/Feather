@@ -1,15 +1,23 @@
 #include <FeatherEngine.h>
 
-class ExampleApp : public Feather::Application {
-
+class ExampleLayer : public Feather::Layer {
 public:
-	ExampleApp() {
-	
+	ExampleLayer()
+		: Layer("Example") {}
+
+	void OnUpdate() override {
+
 	}
 
-	~ExampleApp() {
-	
+	void OnEvent(Feather::Event& event) override {
+		
 	}
+};
+
+class ExampleApp : public Feather::Application {
+public:
+	ExampleApp() {}
+	~ExampleApp() {}
 };
 
 Feather::Application* Feather::CreateApplication() {
