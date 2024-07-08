@@ -41,7 +41,6 @@ namespace Feather {
 			return GetCategoryFlags() & category;
 		}
 
-		protected:
 		bool m_handled = false;
 	};
 

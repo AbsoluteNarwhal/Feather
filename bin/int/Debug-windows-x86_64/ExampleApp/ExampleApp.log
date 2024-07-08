@@ -1,1 +1,5 @@
-﻿  ExampleApp.vcxproj -> C:\dev\Feather\bin\Debug-windows-x86_64\ExampleApp.exe
+﻿  ExampleApp.cpp
+C:\dev\Feather\FeatherEngine\src\Feather\Application.h(20,27): warning C4251: 'Feather::Application::m_Window': 'std::unique_ptr<Feather::Window,std::default_delete<Feather::Window>>' needs to have dll-interface to be used by clients of 'Feather::Application'
+C:\dev\Feather\FeatherEngine\src\Feather\Log.h(18,42): warning C4251: 'Feather::Log::s_CoreLogger': 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of 'Feather::Log'
+C:\dev\Feather\FeatherEngine\src\Feather\Log.h(19,42): warning C4251: 'Feather::Log::s_ClientLogger': 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of 'Feather::Log'
+  ExampleApp.vcxproj -> C:\dev\Feather\bin\Debug-windows-x86_64\ExampleApp.exe

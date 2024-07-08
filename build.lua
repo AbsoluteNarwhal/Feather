@@ -5,6 +5,11 @@ workspace "Feather"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "FeatherEngine/vendor/glfw/include"
+
+include "FeatherEngine/vendor/glfw"
+
 project "FeatherEngine"
 	location "FeatherEngine"
 	kind "SharedLib"
@@ -25,7 +30,14 @@ project "FeatherEngine"
 	includedirs 
 	{
 		"FeatherEngine/src",
-		"FeatherEngine/vendor/spdlog/include"
+		"FeatherEngine/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

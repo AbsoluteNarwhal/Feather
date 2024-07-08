@@ -7,6 +7,9 @@
     <Filter Include="Feather">
       <UniqueIdentifier>{64EEE102-D0CD-609E-D9E5-EB744544C7FF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Window">
+      <UniqueIdentifier>{3DEA79DA-298C-A4B0-1247-B804FE872B01}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Events\ApplicationEvent.h">
@@ -34,6 +37,12 @@
       <Filter>Feather</Filter>
     </ClInclude>
     <ClInclude Include="src\FeatherEngine.h" />
+    <ClInclude Include="src\Window\Window.h">
+      <Filter>Window</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Window\WindowsWindow.h">
+      <Filter>Window</Filter>
+    </ClInclude>
     <ClInclude Include="src\ftpch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +51,9 @@
     </ClCompile>
     <ClCompile Include="src\Feather\Log.cpp">
       <Filter>Feather</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Window\WindowsWindow.cpp">
+      <Filter>Window</Filter>
     </ClCompile>
     <ClCompile Include="src\ftpch.cpp" />
   </ItemGroup>
